@@ -1,5 +1,10 @@
 # Realtime RSS Hub
 
+[![CI](https://github.com/xiaodingyang/realtime-rss-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/xiaodingyang/realtime-rss-hub/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)](https://nodejs.org/)
+[![pnpm](https://img.shields.io/badge/maintained%20with-pnpm-cc00ff.svg)](https://pnpm.io/)
+
 🚀 Real-time RSS news aggregation with SSE (Server-Sent Events) push
 
 将 RSS 订阅源转换为实时推送的新闻流，适合个人博客、企业官网、内容平台等场景。
