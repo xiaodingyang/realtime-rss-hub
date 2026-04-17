@@ -1,5 +1,5 @@
 {
-  "name": "@realtime-rss-hub/server",
+  "name": "@xdy-npm/realtime-rss-hub-server",
   "version": "0.1.0",
   "description": "RSS to SSE real-time push server",
   "main": "src/index.js",

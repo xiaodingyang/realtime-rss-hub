@@ -5,9 +5,9 @@
   "private": true,
 
   "scripts": {
-    "dev:server": "pnpm --filter @realtime-rss-hub/server dev",
-    "dev:react": "pnpm --filter @realtime-rss-hub/react dev",
-    "build": "pnpm --filter @realtime-rss-hub/react build",
+    "dev:server": "pnpm --filter @xdy-npm/realtime-rss-hub-server dev",
+    "dev:react": "pnpm --filter @xdy-npm/realtime-rss-hub-react dev",
+    "build": "pnpm --filter @xdy-npm/realtime-rss-hub-react build",
     "lint": "echo 'Lint not configured yet'",
     "test": "echo 'Tests not configured yet'"
   },

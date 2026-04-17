@@ -7,7 +7,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@realtime-rss-hub/react": "workspace:*",
+    "@xdy-npm/realtime-rss-hub-react": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

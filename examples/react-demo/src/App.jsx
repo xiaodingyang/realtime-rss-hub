@@ -1,5 +1,5 @@
 import React from 'react';
-import { NewsList } from '@realtime-rss-hub/react';
+import { NewsList } from '@xdy-npm/realtime-rss-hub-react';
 
 function App() {
   return (

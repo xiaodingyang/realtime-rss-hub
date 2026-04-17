@@ -23,13 +23,13 @@
 
 ```bash
 # 使用 pnpm (推荐)
-pnpm add @realtime-rss-hub/server @realtime-rss-hub/react
+pnpm add @xdy-npm/realtime-rss-hub-server @xdy-npm/realtime-rss-hub-react
 
 # 使用 npm
-npm install @realtime-rss-hub/server @realtime-rss-hub/react
+npm install @xdy-npm/realtime-rss-hub-server @xdy-npm/realtime-rss-hub-react
 
 # 使用 yarn
-yarn add @realtime-rss-hub/server @realtime-rss-hub/react
+yarn add @xdy-npm/realtime-rss-hub-server @xdy-npm/realtime-rss-hub-react
 ```
 
 ## 🚀 快速开始
@@ -38,7 +38,7 @@ yarn add @realtime-rss-hub/server @realtime-rss-hub/react
 
 ```javascript
 // server.js
-const RSSHub = require('@realtime-rss-hub/server');
+const RSSHub = require('@xdy-npm/realtime-rss-hub-server');
 
 const hub = new RSSHub({
   database: {
@@ -68,7 +68,7 @@ hub.start();
 ### 前端组件 (React)
 
 ```tsx
-import { NewsList } from '@realtime-rss-hub/react';
+import { NewsList } from '@xdy-npm/realtime-rss-hub-react';
 
 function App() {
   return (
