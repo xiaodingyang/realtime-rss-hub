@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  # MongoDB 数据库
+  mongodb:
+    image: mongo:6
+    container_name: realtime-rss-hub-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - rss-network
+
+  # RSS Hub 服务
+  rss-hub:
+    build: .
+    container_name: realtime-rss-hub-server
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      MONGODB_URI: mongodb://admin:password123@mongodb:27017/rss-hub?authSource=admin
+      RSS_URL: https://www.infoq.cn/feed
+      CRON_SCHEDULE: "*/10 * * * *"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    networks:
+      - rss-network
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  rss-network:
+    driver: bridge
