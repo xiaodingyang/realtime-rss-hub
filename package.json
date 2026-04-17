@@ -1,0 +1,33 @@
+{
+  "name": "realtime-rss-hub",
+  "version": "0.1.0",
+  "description": "Real-time RSS news aggregation with SSE push",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "dev:server": "pnpm --filter @realtime-rss-hub/server dev",
+    "dev:react": "pnpm --filter @realtime-rss-hub/react dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test"
+  },
+  "keywords": [
+    "rss",
+    "sse",
+    "real-time",
+    "news",
+    "aggregation"
+  ],
+  "author": "肖定阳 <346629678@qq.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaodingyang/realtime-rss-hub"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
