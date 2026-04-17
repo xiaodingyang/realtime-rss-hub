@@ -3,15 +3,13 @@
   "version": "0.1.0",
   "description": "Real-time RSS news aggregation with SSE push",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ],
+
   "scripts": {
     "dev:server": "pnpm --filter @realtime-rss-hub/server dev",
     "dev:react": "pnpm --filter @realtime-rss-hub/react dev",
-    "build": "pnpm -r build",
-    "test": "pnpm -r test"
+    "build": "pnpm --filter @realtime-rss-hub/react build",
+    "lint": "echo 'Lint not configured yet'",
+    "test": "echo 'Tests not configured yet'"
   },
   "keywords": [
     "rss",

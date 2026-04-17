@@ -3,13 +3,28 @@
   "version": "0.1.0",
   "description": "React components for realtime-rss-hub",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c"
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
-  "keywords": ["react", "rss", "sse", "components"],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "keywords": [
+    "react",
+    "rss",
+    "sse",
+    "components"
+  ],
   "author": "肖定阳",
   "license": "MIT",
   "peerDependencies": {
@@ -17,13 +32,9 @@
     "react-dom": ">=16.8.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.5",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
-    "rollup": "^4.9.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tsup": "^8.5.1",
     "typescript": "^5.3.3"
   }
 }

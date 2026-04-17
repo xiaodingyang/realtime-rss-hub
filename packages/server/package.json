@@ -2,12 +2,11 @@
   "name": "@realtime-rss-hub/server",
   "version": "0.1.0",
   "description": "RSS to SSE real-time push server",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.js",
+  "files": ["src"],
   "scripts": {
     "dev": "nodemon src/index.js",
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node src/index.js"
   },
   "keywords": ["rss", "sse", "server"],
   "author": "肖定阳",
